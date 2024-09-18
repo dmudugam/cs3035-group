@@ -8,6 +8,7 @@ import javafx.scene.layout.GridPane;
 public class GameView extends GridPane {
     private GameController gameController = new GameController();
     private boolean gameEnded = false;
+    private Button[][] buttons = new Button[3][3]; // Declare the buttons array
 
     public GameView() {
         for (int i = 0; i < 3; i++) {
@@ -15,6 +16,7 @@ public class GameView extends GridPane {
                 Button button = new Button();
                 button.setMinWidth(60);
                 button.setMinHeight(60);
+                buttons[i][j] = button; // Initialize the buttons array
                 int finalI = i;
                 int finalJ = j;
                 button.setOnAction(e -> {
@@ -41,5 +43,16 @@ public class GameView extends GridPane {
         alert.setHeaderText(null);
         alert.setContentText("Player " + winner + " wins!");
         alert.showAndWait();
+        resetGame(); // Reset the game after showing the alert
+    }
+
+    private void resetGame() {
+        gameController.resetGame();
+        gameEnded = false;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                buttons[i][j].setText(""); // Clear the text of all buttons
+            }
+        }
     }
 }
