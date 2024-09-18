@@ -16,7 +16,7 @@ TypeScript or one from another class you have taken (e.g., Unity, Android, etc).
 - Shows a message when the button is clicked.
 - Shows the winner when the Tic Tac Toe game is finished.
 - Automatically resets the game.
-- Two Player can play.
+- Two Players can play.
 
 ## Instructions
 1. Clone the repository and install dependencies if they are not already installed. Then, run the Java application.
