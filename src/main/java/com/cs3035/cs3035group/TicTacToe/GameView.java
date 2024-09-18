@@ -20,6 +20,8 @@ public class GameView extends GridPane {
                         char winner = gameController.checkForWinner();
                         if (winner != ' ') {
                             System.out.println("Player " + winner + " wins!");
+                        } else {
+                            gameController.switchPlayer();
                         }
                     }
                 });
