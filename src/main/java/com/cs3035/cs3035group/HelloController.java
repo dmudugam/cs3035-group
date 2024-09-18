@@ -1,5 +1,7 @@
 package com.cs3035.cs3035group;
 
+import com.cs3035.cs3035group.TicTacToe.GameView;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;

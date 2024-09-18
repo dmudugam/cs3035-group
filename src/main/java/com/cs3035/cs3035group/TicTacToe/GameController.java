@@ -1,4 +1,4 @@
-package com.cs3035.cs3035group;
+package com.cs3035.cs3035group.TicTacToe;
 
 public class GameController {
     private char currentPlayer = 'O';

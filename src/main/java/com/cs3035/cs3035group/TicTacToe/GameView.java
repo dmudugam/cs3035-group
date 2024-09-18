@@ -1,4 +1,4 @@
-package com.cs3035.cs3035group;
+package com.cs3035.cs3035group.TicTacToe;
 
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
